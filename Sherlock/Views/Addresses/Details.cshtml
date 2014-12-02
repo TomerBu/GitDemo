@@ -1,0 +1,50 @@
+﻿@model Sherlock.Models.Address
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Address</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Apartment.ApartmentID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apartment.ApartmentID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Street.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Street.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuildingNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AptNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AptNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ApartmentID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
