@@ -10,6 +10,5 @@ namespace Sherlock.ViewModels
     {
         public Apartment Apartment { get; set; }
         public Address Address { get; set; }
-        //Added a comment
     }
 }
