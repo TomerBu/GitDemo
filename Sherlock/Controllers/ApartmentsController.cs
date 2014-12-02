@@ -53,7 +53,7 @@ namespace Sherlock.Controllers
         public async Task<ActionResult> Create([Bind(Include = "ApartmentID,Rooms,Price,Area,Address,BuildingNumber,AptNumber,StreetID")] Apartment apt)
         {
           //  var address = new Address();
-
+            //Added a comment
             TryUpdateModel(apt.Address);
         
             
